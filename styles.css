@@ -1,0 +1,66 @@
+/* Default stylings */
+
+
+
+
+
+/* End default styles */
+
+/* start of desktop styles */
+
+@media screen and (max-width: 991px) {
+    /* start of large tablet styles */
+    
+}
+    
+    @media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+    
+}
+    
+    @media screen and (min-width: 401px) {
+    /* start of phone styles */
+    
+        body {
+            background-color: rgba(68, 214, 42, 0.644);
+            }
+            
+         #puzzle-top-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+
+         #puzzle-bottom-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+        
+         #puzzle-top-left {
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            } 
+
+        #puzzle-top-right {
+            width: 150px;
+            height: 150px;
+            background-color: purple;
+            } 
+
+        #puzzle-bottom-left {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(54, 77, 207);
+            } 
+
+        #puzzle-bottom-right {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(224, 177, 45);
+            } 
+
+            
+        
+    }
