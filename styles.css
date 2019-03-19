@@ -85,14 +85,18 @@
     {
         width: 150px;
         height: 150px;
-        background-color: green;
+        background-color: rgb(38, 192, 51);
     } 
+
+    #puzzle-top-left:focus{
+        background-color:gray;
+    }
 
     #puzzle-top-right 
     {
         width: 150px;
         height: 150px;
-        background-color: purple;
+        background-color: rgb(185, 10, 185);
     } 
 
     #puzzle-bottom-left 
@@ -109,21 +113,16 @@
         background-color: rgb(224, 177, 45);
     } 
  
-    input:checked {
-        opacity: 0;
-    }
 
-    input[type=checkbox] {
-        opacity: 0.1;
-        transform: scale(10);
+    .mystyle {
+        width: 100%;
+        padding: 25px;
+        background-color: coral;
+        color: white;
+        font-size: 25px;
       }
 
-    #magnify-top-left {
-        width: 150px;
-        background-color: green;
-    }
 
-        
     
 }
 @media screen and (min-width: 800px) 
