@@ -81,12 +81,13 @@
         align-items: center;
     }
     
-    #puzzle-top-left 
+    .puzzle-top-left 
     {
         width: 150px;
         height: 150px;
         background-color: rgb(38, 192, 51);
     } 
+
 
     #puzzle-top-left:focus{
         background-color:gray;
@@ -115,12 +116,10 @@
  
 
     .mystyle {
-        width: 100%;
-        padding: 25px;
-        background-color: coral;
-        color: white;
-        font-size: 25px;
-      }
+        
+        background-color: black;
+    }
+
 
 
     
