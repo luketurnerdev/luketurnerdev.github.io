@@ -47,7 +47,7 @@
         flex-direction: row;
         justify-content: center;
         position: relative;
-        top: 140px;
+        top: 110px;
     }
 
     #down-arrow{
@@ -58,6 +58,7 @@
     #main-section {
         position: relative;
         top: 0px;
+        height: 100vh;
     }
 
     #puzzle-container 
@@ -107,6 +108,20 @@
         height: 150px;
         background-color: rgb(224, 177, 45);
     } 
+ 
+    input:checked {
+        opacity: 0;
+    }
+
+    input[type=checkbox] {
+        opacity: 0.1;
+        transform: scale(10);
+      }
+
+    #magnify-top-left {
+        width: 150px;
+        background-color: green;
+    }
 
         
     
