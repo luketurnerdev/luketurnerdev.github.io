@@ -129,14 +129,29 @@
     #topleft-zoom-tile {
         height:100%;
         width:100%;
+        transform: scale(1,1);
+        transition: 1s;
+        
     }
 
-    .topleft-zoom-style 
+    #topleft-zoom-tile p{
+        visibility: hidden;
+    }
+
+    #topleft-zoom-tile.topleft-zoom-style 
     {
         background-color: whitesmoke;
         transform: scale(4, 4);
         transition-duration: 1s;
+        font-size: 20px;
     }
+
+    #topleft-zoom-tile.topleft-zoom-style p 
+    {
+        visibility: visible;
+    }
+
+
 
     #topright-zoom-tile {
         height:100%;
@@ -149,6 +164,8 @@
         background-color: whitesmoke;
         transform: scale(4, 4);
         transition-duration: 1s;
+        
+
     }
 
     #bottomleft-zoom-tile {
@@ -167,24 +184,33 @@
     #bottomright-zoom-tile {
         height:100%;
         width:100%;
+        transform: scale(1,1); 
+        transition-duration: 1s;
     }
 
     .bottomright-zoom-style 
     {
         
         background-color: whitesmoke;
-        transform: scale(4, 4);
-        transition-duration: 1s;
+        transform: scale(4, 4) ;
+        transition-duration: 1s ;
+
+
+
+
     }
 
     /* Hidden tiles containing information 
 
     Only show these after zoom animation plays */
 
+    #about-hidden {
+        display: none;
+    }
+
     #projects-hidden {
 
-        display:none;
-
+        display: none;
 
     }
 
