@@ -2,17 +2,22 @@
 
 #launch-pad
     {
-        background-color:  gray;
+        background-color:  #252934;
         height: 100vh;
     }
 
 @media screen and (min-width: 401px) {
 /* start of phone styles */
 
-    
+    html {
+        scroll-behavior: smooth;
+    }
 
     #launch-pad
     {
+        background-image: url("./img/leaf-bg.jpg");
+        background-size: cover;
+        background-position: center;
         background-color:  #252934;
         height: 100vh;
     }
@@ -22,10 +27,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white;
+        color: rgba(0, 0, 0, 0.918);
         font-family: 'Open Sans', sans-serif;
         position: relative;
-        top: 15vh;
+        top: 7vh;
+        font-size: 50px;
     }
 
     #sub-heading {
@@ -34,13 +40,15 @@
         color: white;
         font-family: 'Open Sans', sans-serif;
         font-size: 14px;
+        color: rgba(0, 0, 0, 0.918);
         position: relative;
-        top: 20vh;
+        top: 9vh;
+        font-size: 20px;
     }
 
     #intro span {
         display: inline;
-        color: pink;
+        color: rgb(219, 13, 47);
         white-space: pre;
     }
 
@@ -49,7 +57,8 @@
         flex-direction: row;
         justify-content: center;
         position: relative;
-        top: 110px;
+        top: 10vh;
+        
     }
 
     #down-arrow{
@@ -61,12 +70,13 @@
         position: relative;
         top: 0px;
         height: 100vh;
+        background-color: EEE5E9;
     }
 
     #puzzle-container 
     {
         position: relative;
-        top: 25px;
+        top: 30%;
     }
         
     #puzzle-top-row 
@@ -119,9 +129,11 @@
     {
         position: relative;
         top: 200px;
+        left: 30%;
         background-color: red;
         height: 50px;
         width: 500px;
+
     }
 
     /* Altered puzzle tile states */
@@ -133,23 +145,38 @@
         width:100%;
         transform: scale(1,1);
         transition: 1s;
+        z-index:0;
+        font-family: 'Open Sans', sans-serif;
         
     }
 
     #topleft-zoom-tile p{
         visibility: hidden;
+        font-size: 10px;
+    }
+
+    #topleft-zoom-tile h1{
+        text-align: center;
     }
 
     #topleft-zoom-tile.topleft-zoom-style 
     {
         background-color: whitesmoke;
-        transform: scale(4, 4);
+        transform: scale(4,4);
         transition-duration: 1s;
+        position: relative;
+        z-index:99;
     }
-
+    
+    #topleft-zoom-tile.topleft-zoom-style h1
+    {
+        display: flex;
+        justify-content: center;
+    }
     #topleft-zoom-tile.topleft-zoom-style p 
     {
         visibility: visible;
+        
     }
 
 
@@ -160,10 +187,25 @@
         width:100%;
         transform: scale(1,1);
         transition: 1s;
+        
+    }
+
+    #topright-zoom-tile h1{
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+
     }
 
     #topright-zoom-tile p{
         visibility: hidden;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 60%;
+    }
+
+    #topright-zoom-tile ol{
+        visibility: hidden;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 60%;
     }
 
     #topright-zoom-tile.topright-zoom-style 
@@ -172,6 +214,9 @@
         background-color: whitesmoke;
         transform: scale(4, 4);
         transition-duration: 1s;
+        position: relative;
+        z-index:99;
+        font-size: 10px;
     }
 
 
@@ -179,8 +224,14 @@
     { 
 
         visibility: visible;
-
     }
+
+    #topright-zoom-tile.topright-zoom-style ol
+    { 
+
+        visibility: visible;
+    }
+
 
     /* Bottom left */
 
@@ -189,10 +240,16 @@
         width:100%;
         transform: scale(1,1);
         transition: 1s;
+        font-family: 'Open Sans', sans-serif;
     }
 
     #bottomleft-zoom-tile p{
         visibility: hidden;
+
+    }
+
+    #bottomleft-zoom-tile h1{
+        text-align: center;
     }
 
     #bottomleft-zoom-tile.bottomleft-zoom-style 
@@ -201,6 +258,8 @@
         background-color: whitesmoke;
         transform: scale(4, 4);
         transition-duration: 1s;
+        position: relative;
+        z-index:99;
     }
 
 
@@ -218,10 +277,15 @@
         width:100%;
         transform: scale(1,1);
         transition: 1s;
+        font-family: 'Open Sans', sans-serif;
     }
 
     #bottomright-zoom-tile p{
         visibility: hidden;
+    }
+
+    #bottomright-zoom-tile h1{
+        text-align: center;
     }
 
     #bottomright-zoom-tile.bottomright-zoom-style 
@@ -230,6 +294,8 @@
         background-color: whitesmoke;
         transform: scale(4, 4);
         transition-duration: 1s;
+        position: relative;
+        z-index:99;
     }
 
 
@@ -260,9 +326,13 @@
 {
     /* start of medium tablet styleßs */
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     #launch-pad 
     {
-        background-color: orange;
+        background-color:  #252934;
         
     }
 
