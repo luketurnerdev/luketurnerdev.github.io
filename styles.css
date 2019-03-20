@@ -126,6 +126,8 @@
 
     /* Altered puzzle tile states */
 
+    /* Top left */
+
     #topleft-zoom-tile {
         height:100%;
         width:100%;
@@ -143,7 +145,6 @@
         background-color: whitesmoke;
         transform: scale(4, 4);
         transition-duration: 1s;
-        font-size: 20px;
     }
 
     #topleft-zoom-tile.topleft-zoom-style p 
@@ -152,51 +153,90 @@
     }
 
 
+    /* Top right */
 
     #topright-zoom-tile {
         height:100%;
         width:100%;
+        transform: scale(1,1);
+        transition: 1s;
     }
 
-    .topright-zoom-style 
+    #topright-zoom-tile p{
+        visibility: hidden;
+    }
+
+    #topright-zoom-tile.topright-zoom-style 
     { 
 
         background-color: whitesmoke;
         transform: scale(4, 4);
         transition-duration: 1s;
-        
+    }
+
+
+    #topright-zoom-tile.topright-zoom-style p
+    { 
+
+        visibility: visible;
 
     }
+
+    /* Bottom left */
 
     #bottomleft-zoom-tile {
         height:100%;
         width:100%;
+        transform: scale(1,1);
+        transition: 1s;
     }
 
-    .bottomleft-zoom-style 
-    {
+    #bottomleft-zoom-tile p{
+        visibility: hidden;
+    }
+
+    #bottomleft-zoom-tile.bottomleft-zoom-style 
+    { 
+
         background-color: whitesmoke;
         transform: scale(4, 4);
         transition-duration: 1s;
-        
     }
+
+
+    #bottomleft-zoom-tile.bottomleft-zoom-style p
+    { 
+
+        visibility: visible;
+
+    }
+
+    /* Bottom right */
 
     #bottomright-zoom-tile {
         height:100%;
         width:100%;
-        transform: scale(1,1); 
+        transform: scale(1,1);
+        transition: 1s;
+    }
+
+    #bottomright-zoom-tile p{
+        visibility: hidden;
+    }
+
+    #bottomright-zoom-tile.bottomright-zoom-style 
+    { 
+
+        background-color: whitesmoke;
+        transform: scale(4, 4);
         transition-duration: 1s;
     }
 
-    .bottomright-zoom-style 
-    {
-        
-        background-color: whitesmoke;
-        transform: scale(4, 4) ;
-        transition-duration: 1s ;
 
+    #bottomright-zoom-tile.bottomright-zoom-style p
+    { 
 
-
+        visibility: visible;
 
     }
 
@@ -206,12 +246,6 @@
 
     #about-hidden {
         display: none;
-    }
-
-    #projects-hidden {
-
-        display: none;
-
     }
 
 
