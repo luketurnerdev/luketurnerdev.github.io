@@ -70,7 +70,7 @@
         position: relative;
         top: 0px;
         height: 100vh;
-        background-color: EEE5E9;
+        background-color: #F1FFE7;
     }
 
     #puzzle-container 
@@ -100,7 +100,7 @@
     {
         width: 150px;
         height: 150px;
-        background-color: green;
+        background-color: #A690A4;
     } 
 
 
@@ -108,21 +108,21 @@
     {
         width: 150px;
         height: 150px;
-        background-color: rgb(185, 10, 185);
+        background-color: #F0C987;
     } 
 
     #puzzle-bottom-left 
     {
         width: 150px;
         height: 150px;
-        background-color: rgb(54, 77, 207);
+        background-color: #CFF27E;
     } 
 
     #puzzle-bottom-right 
     {
         width: 150px;
         height: 150px;
-        background-color: rgb(224, 177, 45);
+        background-color: #51A3A3;
     } 
  
     #footer
@@ -157,6 +157,9 @@
 
     #topleft-zoom-tile h1{
         text-align: center;
+        position: relative;
+        top: 20%;
+        font-size: 30px;
     }
 
     #topleft-zoom-tile.topleft-zoom-style 
@@ -172,11 +175,13 @@
     {
         display: flex;
         justify-content: center;
+        position: relative;
+        top: 2%;
     }
     #topleft-zoom-tile.topleft-zoom-style p 
     {
         visibility: visible;
-        
+        font-size: 5px;
     }
 
 
@@ -187,12 +192,18 @@
         width:100%;
         transform: scale(1,1);
         transition: 1s;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
         
     }
 
     #topright-zoom-tile h1{
+       
+
         text-align: center;
-        font-family: 'Open Sans', sans-serif;
+        position: relative;
+        top: 20%;
+        font-size: 30px;
 
     }
 
@@ -200,6 +211,8 @@
         visibility: hidden;
         font-family: 'Open Sans', sans-serif;
         font-size: 60%;
+
+
     }
 
     #topright-zoom-tile ol{
@@ -224,12 +237,28 @@
     { 
 
         visibility: visible;
+
+
+       
+    }
+
+    #topright-zoom-tile.topright-zoom-style h1
+    { 
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 2%;
+        
     }
 
     #topright-zoom-tile.topright-zoom-style ol
     { 
 
         visibility: visible;
+        text-align: left;
+        position: relative;
+        left: 5%;
+        
     }
 
 
@@ -269,6 +298,14 @@
         visibility: visible;
 
     }
+    #bottomleft-zoom-tile.bottomleft-zoom-style h1
+    {
+
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 2%;
+    }
 
     /* Bottom right */
 
@@ -305,15 +342,20 @@
         visibility: visible;
 
     }
+    #bottomright-zoom-tile.bottomright-zoom-style h1
+    {
+
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 2%;
+    }
 
     /* Hidden tiles containing information 
 
     Only show these after zoom animation plays */
 
-    #about-hidden {
-        display: none;
-    }
-
+ 
 
 
     /* // transform.scale
