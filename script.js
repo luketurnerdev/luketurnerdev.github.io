@@ -1,4 +1,4 @@
-function myFunction() {
-    var element = document.getElementById("zoom-tile");
-    element.classList.toggle("mystyle");
+function zoomTopLeft() {
+    var element = document.getElementById("topleft-zoom-tile");
+    element.classList.toggle("topleft-zoom-style");
   }

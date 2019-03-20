@@ -118,12 +118,6 @@
     } 
  
 
-    .mystyle 
-    {
-        
-        background-color: black;
-    }
-
     #footer
     {
         position: relative;
@@ -133,16 +127,22 @@
         width: 500px;
     }
 
-    #zoom-tile {
+    #topleft-zoom-tile {
         height:100%;
         width:100%;
     }
 
+    .topleft-zoom-style 
+    {
+        
+        background-color: black;
+    }
 
 
-    // transform.scale
 
-    //transform duration
+    /* // transform.scale
+
+    //transform duration */
 
 
 }
