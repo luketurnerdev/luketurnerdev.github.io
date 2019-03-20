@@ -83,6 +83,8 @@
         align-items: center;
     }
 
+
+    /* Initial puzzle tile states */
     
     #puzzle-top-left 
     {
@@ -90,10 +92,6 @@
         height: 150px;
         background-color: green;
     } 
-
-    .topleft-class {
-        background-color: green;
-    }
 
 
     #puzzle-top-right 
@@ -117,7 +115,6 @@
         background-color: rgb(224, 177, 45);
     } 
  
-
     #footer
     {
         position: relative;
@@ -127,6 +124,8 @@
         width: 500px;
     }
 
+    /* Altered puzzle tile states */
+
     #topleft-zoom-tile {
         height:100%;
         width:100%;
@@ -134,8 +133,59 @@
 
     .topleft-zoom-style 
     {
+        background-color: whitesmoke;
+        transform: scale(4, 4);
+        transition-duration: 1s;
+    }
+
+    #topright-zoom-tile {
+        height:100%;
+        width:100%;
+    }
+
+    .topright-zoom-style 
+    { 
+
+        background-color: whitesmoke;
+        transform: scale(4, 4);
+        transition-duration: 1s;
+    }
+
+    #bottomleft-zoom-tile {
+        height:100%;
+        width:100%;
+    }
+
+    .bottomleft-zoom-style 
+    {
+        background-color: whitesmoke;
+        transform: scale(4, 4);
+        transition-duration: 1s;
         
-        background-color: black;
+    }
+
+    #bottomright-zoom-tile {
+        height:100%;
+        width:100%;
+    }
+
+    .bottomright-zoom-style 
+    {
+        
+        background-color: whitesmoke;
+        transform: scale(4, 4);
+        transition-duration: 1s;
+    }
+
+    /* Hidden tiles containing information 
+
+    Only show these after zoom animation plays */
+
+    #projects-hidden {
+
+        display:none;
+
+
     }
 
 

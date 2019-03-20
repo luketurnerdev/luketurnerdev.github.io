@@ -41,18 +41,30 @@
         <div id="puzzle-container">
 
             <div id="puzzle-top-row">
+
+                <!-- The tile sitting underneath (defines dimensions) -->
             
-                <div id="puzzle-top-left" class="topleft-class">
+                <div id="puzzle-top-left">
+
+                <!-- The clickable tile on top with same dimensions as parent-->
 
                     <div id="topleft-zoom-tile" onclick="zoomTopLeft()">
                     
-
                     </div>
                     
 
                 </div>
             
                     <div id="puzzle-top-right">
+
+                        <div id="topright-zoom-tile" onclick="zoomTopRight()">
+                            
+                                <div id="projects-hidden">
+                                        <h1> Projects</h1>
+                                    
+                                        <p> These are my projects : github link</p>
+                                    </div>
+                        </div>
                         
                     </div>
             
@@ -62,13 +74,23 @@
                 <div id="puzzle-bottom-row">
             
             
-                    <div id="puzzle-bottom-left">
-                        
-                    </div>
+                        <div id="puzzle-bottom-left">
+
+                                <div id="bottomleft-zoom-tile" onclick="zoomBottomLeft()">
+                                
+                                </div>
+                                
             
-                    <div id="puzzle-bottom-right">
-                        
-                    </div>
+                            </div>
+            
+                        <div id="puzzle-bottom-right">
+
+                                <div id="bottomright-zoom-tile" onclick="zoomBottomRight()">
+                                    
+                                </div>
+                                    
+                
+                        </div>
                 </div>
                 
             </div>
@@ -87,15 +109,13 @@
 <!--CONTENTS: About, projects, etc-->
 
 
-<div id="projects">
+
+
+<div id="blog-hidden">
     
 </div>
 
-<div id="blog">
-    
-</div>
-
-<div id="contact">
+<div id="contact-hidden">
     
 </div>
 
