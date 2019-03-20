@@ -9,6 +9,8 @@
 @media screen and (min-width: 401px) {
 /* start of phone styles */
 
+    
+
     #launch-pad
     {
         background-color:  #252934;
@@ -80,18 +82,19 @@
         justify-content: center;
         align-items: center;
     }
+
     
-    .puzzle-top-left 
+    #puzzle-top-left 
     {
         width: 150px;
         height: 150px;
-        background-color: rgb(38, 192, 51);
+        background-color: green;
     } 
 
-
-    #puzzle-top-left:focus{
-        background-color:gray;
+    .topleft-class {
+        background-color: green;
     }
+
 
     #puzzle-top-right 
     {
@@ -115,14 +118,33 @@
     } 
  
 
-    .mystyle {
+    .mystyle 
+    {
         
         background-color: black;
     }
 
+    #footer
+    {
+        position: relative;
+        top: 200px;
+        background-color: red;
+        height: 50px;
+        width: 500px;
+    }
+
+    #zoom-tile {
+        height:100%;
+        width:100%;
+    }
 
 
-    
+
+    // transform.scale
+
+    //transform duration
+
+
 }
 @media screen and (min-width: 800px) 
 {
