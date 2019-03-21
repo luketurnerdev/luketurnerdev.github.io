@@ -166,7 +166,6 @@
     #topleft-zoom-tile ul{
         visibility: hidden;
         padding-left: 15%;
-        font-size: 5px;
     }
 
     #topleft-zoom-tile h1{
@@ -198,22 +197,26 @@
         justify-content: center;
         position: relative;
         top: 2%;
+        font-size: 45px;
     }
     #topleft-zoom-tile.topleft-zoom-style p 
     {
         visibility: visible;
-        font-size: 5px;
+        font-size: 30px;
     }
 
     #topleft-zoom-tile.topleft-zoom-style li 
     {
         visibility: visible;
+        font-size:30;
+
 
     }
 
     #topleft-zoom-tile.topleft-zoom-style ul 
     {
         visibility: visible;
+        font-size:30;
 
     }
 
