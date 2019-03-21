@@ -9,6 +9,7 @@
 @media screen and (min-width: 401px) {
 /* start of phone styles */
 
+
     html {
         scroll-behavior: smooth;
     }
@@ -67,7 +68,6 @@
 
     #main-section {
         position: relative;
-        top: 0px;
         height: 100vh;
         background-color: #FFEED6
     }
@@ -75,7 +75,7 @@
     #puzzle-container 
     {
         position: relative;
-        top: 25%;
+        top: 30vh;
     }
         
     #puzzle-top-row 
