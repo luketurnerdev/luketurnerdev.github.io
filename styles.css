@@ -16,7 +16,7 @@
     #launch-pad
     {
         background-image: url("./img/dark-wall.jpg");
-        /* background-size: */
+        background-attachment: fixed;
         background-color:  #252934;
         height: 100vh;
     }
@@ -30,7 +30,7 @@
         font-family: 'Open Sans', sans-serif;
         position: relative;
         top: 7vh;
-        font-size: 50px;
+        font-size: 200%;
     }
 
     #sub-heading {
@@ -42,7 +42,7 @@
         color: rgba(0, 0, 0, 0.918);
         position: relative;
         top: 9vh;
-        font-size: 20px;
+        font-size: 100%;
     }
 
     #intro span {
@@ -153,13 +153,14 @@
         text-align: center;
         position: relative;
         top: 20%;
-        font-size: 30px;
+        font-size: 125%;
     }
 
     #topleft-zoom-tile.topleft-zoom-style 
     {
         background-color: whitesmoke;
-        transform: scale(4,4);
+        
+        transform: translate(13vw, 10vh) scale(3,3);
         transition-duration: 1s;
         position: relative;
         z-index:99;
@@ -197,7 +198,7 @@
         text-align: center;
         position: relative;
         top: 20%;
-        font-size: 30px;
+        font-size: 125%;
 
     }
 
@@ -219,7 +220,7 @@
     { 
 
         background-color: whitesmoke;
-        transform: scale(4, 4);
+        transform: translate(-13vw, 10vh) scale(3,3);
         transition-duration: 1s;
         position: relative;
         z-index:99;
@@ -273,13 +274,16 @@
 
     #bottomleft-zoom-tile h1{
         text-align: center;
+        position: relative;
+        top: 20%;
+        font-size: 125%;
     }
 
     #bottomleft-zoom-tile.bottomleft-zoom-style 
     { 
 
         background-color: whitesmoke;
-        transform: scale(4, 4);
+        transform: translate(17vw, -15vh) scale(3,3);
         transition-duration: 1s;
         position: relative;
         z-index:99;
@@ -317,13 +321,16 @@
 
     #bottomright-zoom-tile h1{
         text-align: center;
+        position: relative;
+        top: 20%;
+        font-size: 125%;
     }
 
     #bottomright-zoom-tile.bottomright-zoom-style 
     { 
 
         background-color: whitesmoke;
-        transform: scale(4, 4);
+        transform: translate(-13vw, -13vh) scale(3,3);
         transition-duration: 1s;
         position: relative;
         z-index:99;
