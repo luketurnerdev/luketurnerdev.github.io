@@ -246,12 +246,6 @@
     }
 
 
-    #project-captions {
-        visibility: hidden;
-        height: 10%;
-        width: 10%;
-    }
-
     #project-1 {
         z-index: 99;
         height: 30%;
