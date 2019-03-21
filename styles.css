@@ -204,9 +204,6 @@
 
     }
 
-    #project-image-container p {
-        font-size: 15px;
-    }
 
     #project-captions {
         visibility: hidden;
@@ -217,6 +214,7 @@
         height: 30%;
         width: 30%;
         position: relative;
+        font-size: 80%;
     }
 
     #project-2 {
@@ -224,7 +222,7 @@
         height: 30%;
         width: 30%;
         position: relative;
-
+        font-size: 80%;
     }
 
 
@@ -233,7 +231,7 @@
         height: 30%;
         width: 30%;
         position: relative;
-
+        font-size: 80%;
     }
     #topright-zoom-tile h1{
        
@@ -275,9 +273,12 @@
     { 
 
         visibility: visible;
+    }
 
+    #topright-zoom-tile.topright-zoom-style a
+    { 
 
-       
+        visibility: visible;
     }
 
     #topright-zoom-tile.topright-zoom-style h1
