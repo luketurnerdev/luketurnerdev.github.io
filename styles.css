@@ -160,7 +160,7 @@
     {
         background-color: whitesmoke;
         
-        transform: translate(13vw, 10vh) scale(3,3);
+        transform: translate(1vw, 0vh) scale(3,3);
         transition-duration: 1s;
         position: relative;
         z-index:99;
@@ -275,7 +275,7 @@
     { 
 
         background-color: whitesmoke;
-        transform: translate(-13vw, 10vh) scale(3,3);
+        transform: scale(3,3);
         transition-duration: 1s;
         position: relative;
         z-index:99;
@@ -341,7 +341,7 @@
     { 
 
         background-color: whitesmoke;
-        transform: translate(17vw, -15vh) scale(3,3);
+        transform: translate(1vw,-5vh) scale(3,3);
         transition-duration: 1s;
         position: relative;
         z-index:99;
@@ -388,10 +388,11 @@
     { 
 
         background-color: whitesmoke;
-        transform: translate(-13vw, -13vh) scale(3,3);
+        transform: translate(-2vw,-3vh) scale(3,3);
         transition-duration: 1s;
         position: relative;
         z-index:99;
+
     }
 
 
