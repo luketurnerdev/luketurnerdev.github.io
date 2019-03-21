@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
 
 #launch-pad
     {
@@ -16,8 +17,10 @@
 
     #launch-pad
     {
-        background-image: url("./img/dark-wall.jpg");
+        background-image: url("./img/leaf-bg.jpg");
         background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
         background-color:  #252934;
         height: 100vh;
     }
@@ -74,8 +77,11 @@
 
     #puzzle-container 
     {
-        position: relative;
-        top: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top:32%;
+        left:40%;
     }
         
     #puzzle-top-row 
@@ -140,13 +146,20 @@
         transform: scale(1,1);
         transition: 1s;
         z-index:0;
-        font-family: 'Open Sans', sans-serif;
-        
+        font-family: 'Nanum Gothic', sans-serif;       
+         
     }
 
     #topleft-zoom-tile p{
         visibility: hidden;
         font-size: 10px;
+    }
+
+
+    #topleft-zoom-tile ul{
+        visibility: hidden;
+        padding-left: 15%;
+        font-size: 5px;
     }
 
     #topleft-zoom-tile h1{
@@ -160,10 +173,19 @@
     {
         background-color: whitesmoke;
         
-        transform: translate(1vw, 0vh) scale(3,3);
+        /* transform: translate(1vw, 0vh) scale(3,3); */
         transition-duration: 1s;
-        position: relative;
+        /* position: relative; */
         z-index:99;
+
+        position: absolute;
+        z-index: 99;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right:0;
+        height: 100vh;
+        width: 100vw;
     }
     
     #topleft-zoom-tile.topleft-zoom-style h1
@@ -179,6 +201,18 @@
         font-size: 5px;
     }
 
+    #topleft-zoom-tile.topleft-zoom-style li 
+    {
+        visibility: visible;
+
+    }
+
+    #topleft-zoom-tile.topleft-zoom-style ul 
+    {
+        visibility: visible;
+
+    }
+
 
     /* Top right */
 
@@ -188,7 +222,7 @@
         transform: scale(1,1);
         transition: 1s;
         text-align: center;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Nanum Gothic', sans-serif;
         
     }
 
@@ -259,7 +293,7 @@
 
     #topright-zoom-tile p{
         visibility: hidden;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Nanum Gothic', sans-serif;
         font-size: 60%;
 
 
@@ -267,7 +301,7 @@
 
     #topright-zoom-tile ol{
         visibility: hidden;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Nanum Gothic', sans-serif;
         font-size: 60%;
     }
 
@@ -275,7 +309,7 @@
     { 
 
         background-color: whitesmoke;
-        transform: scale(3,3);
+        transform: scale(4,4);
         transition-duration: 1s;
         position: relative;
         z-index:99;
@@ -311,6 +345,8 @@
         text-align: left;
         position: relative;
         left: 5%;
+        height: 70%;
+        width: 70%;
         
     }
 
@@ -322,7 +358,7 @@
         width:100%;
         transform: scale(1,1);
         transition: 1s;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Nanum Gothic', sans-serif;
     }
 
     #bottomleft-zoom-tile p{
@@ -370,7 +406,7 @@
         width:100%;
         transform: scale(1,1);
         transition: 1s;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Nanum Gothic', sans-serif;
     }
 
     #bottomright-zoom-tile p{
