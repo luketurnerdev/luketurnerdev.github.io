@@ -179,12 +179,9 @@
     #topleft-zoom-tile.topleft-zoom-style 
     {
         background-color: whitesmoke;
-        
-        /* transform: translate(1vw, 0vh) scale(3,3); */
         transition-duration: 1s;
-        /* position: relative; */
         z-index:99;
-
+        
         position: absolute;
         z-index: 99;
         left: 0;
@@ -316,11 +313,16 @@
     { 
 
         background-color: whitesmoke;
-        transform: scale(4,4);
-        transition-duration: 1s;
         position: relative;
         z-index:99;
-        font-size: 10px;
+        position: absolute;
+        z-index: 99;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right:0;
+        height: 100vh;
+        width: 100vw;
     }
 
 
@@ -384,10 +386,16 @@
     { 
 
         background-color: whitesmoke;
-        transform: translate(1vw,-5vh) scale(3,3);
-        transition-duration: 1s;
         position: relative;
         z-index:99;
+        position: absolute;
+        z-index: 99;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right:0;
+        height: 100vh;
+        width: 100vw;
     }
 
 
@@ -431,10 +439,16 @@
     { 
 
         background-color: whitesmoke;
-        transform: translate(-2vw,-3vh) scale(3,3);
-        transition-duration: 1s;
         position: relative;
         z-index:99;
+        position: absolute;
+        z-index: 99;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right:0;
+        height: 100vh;
+        width: 100vw;
 
     }
 
