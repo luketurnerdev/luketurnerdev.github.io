@@ -15,9 +15,8 @@
 
     #launch-pad
     {
-        background-image: url("./img/leaf-bg.jpg");
-        background-size: cover;
-        background-position: center;
+        background-image: url("./img/dark-wall.jpg");
+        /* background-size: */
         background-color:  #252934;
         height: 100vh;
     }
@@ -57,7 +56,7 @@
         flex-direction: row;
         justify-content: center;
         position: relative;
-        top: 10vh;
+        top: 12%;
         
     }
 
@@ -70,13 +69,13 @@
         position: relative;
         top: 0px;
         height: 100vh;
-        background-color: #F1FFE7;
+        background-color: #FFEED6
     }
 
     #puzzle-container 
     {
         position: relative;
-        top: 30%;
+        top: 25%;
     }
         
     #puzzle-top-row 
@@ -98,41 +97,36 @@
     
     #puzzle-top-left 
     {
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
         background-color: #A690A4;
     } 
 
 
     #puzzle-top-right 
     {
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
         background-color: #F0C987;
     } 
 
     #puzzle-bottom-left 
     {
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
         background-color: #CFF27E;
     } 
 
     #puzzle-bottom-right 
     {
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
         background-color: #51A3A3;
     } 
  
     #footer
     {
-        position: relative;
-        top: 200px;
-        left: 30%;
-        background-color: red;
-        height: 50px;
-        width: 500px;
+       
 
     }
 
