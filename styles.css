@@ -595,9 +595,10 @@
         visibility: visible;
         position: relative;
         left: 73vw;
-
         cursor:pointer;
     }
+
+    
 
     /* Bottom right */
 
@@ -645,6 +646,12 @@
 
     }
 
+    #bottomright-back-button{
+        visibility:hidden;
+        height: 50px;
+        width: 50px;
+    }
+
     #bottomright-zoom-tile th, td {
         border:1px solid black;
     }
@@ -661,7 +668,7 @@
         top: 15vh;
     }
 
-      }
+      
 
       #linkedin{
         font-size: 5vw;
@@ -729,6 +736,15 @@
     {
 
        visibility: visible;
+    }
+
+    #bottomright-zoom-tile.bottomright-zoom-style #bottomright-back-button{
+        visibility: visible;
+        position: absolute;
+        left: 90vw;
+        cursor: pointer;
+        top: 5vh;
+       
     }
 
     
