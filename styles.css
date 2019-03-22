@@ -137,11 +137,6 @@
         background-color: #51A3A3;
     } 
  
-    #footer
-    {
-       
-
-    }
 
     /* Altered puzzle tile states */
 
@@ -160,7 +155,7 @@
 
     #topleft-zoom-tile p{
         visibility: hidden;
-        font-size: 10px;
+        font-size: 8px;
     }
 
 
@@ -174,13 +169,35 @@
         position: relative;
         top: 20%;
         font-size: 125%;
+        cursor:pointer;
     }
 
-    #topleft-zoom-tile h2{
+    #about-me{
+       
+        font-size: 200%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 2%;
+        font-size: 50px;
+    }
+
+    #topleft-zoom-tile h2 {
+        visibility: hidden;
+    }
+
+    #topleft-back-button{
        
 
         visibility: hidden;
-        font-size: 200%;
+        position: relative;
+        height: 50px;
+        width: 50px;
+        top: -10vh;
+        left: 91vw;
+        cursor:pointer;
+
+        
     }
 
     #topleft-zoom-tile.topleft-zoom-style 
@@ -199,46 +216,26 @@
         width: 100vw;
     }
     
-    #topleft-zoom-tile.topleft-zoom-style h1
-    {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        top: 2%;
-        font-size: 50px;
-    }
+    
 
-    #preamble{
-
-        position: relative;
-        top: 5%;
-    }
-
-    #skills {
-
-        position: relative;
-        top: 7%;
-    }
-
-    #work-history {
-
-        position: relative;
-        top: 7%;
-    }
-
-    #study-history {
-        position: relative;
-        top: 7%;
-    }
+    
 
     #topleft-zoom-tile.topleft-zoom-style h2
     {
         visibility: visible;
     }
+
+    #topleft-zoom-tile.topleft-zoom-style h1
+    {
+        visibility: hidden;
+    }
+
     #topleft-zoom-tile.topleft-zoom-style p 
     {
         visibility: visible;
-        font-size: 25px;
+        font-size: 20px;
+        position: relative;
+        bottom: 50px;
     }
 
     #topleft-zoom-tile.topleft-zoom-style li 
@@ -252,9 +249,16 @@
     #topleft-zoom-tile.topleft-zoom-style ul 
     {
         visibility: visible;
-        /* font-size:30; */
 
     }
+
+    #topleft-zoom-tile.topleft-zoom-style #topleft-back-button
+    {
+        visibility: visible;
+        
+    } 
+
+    
 
 
 
@@ -349,6 +353,7 @@
         position: relative;
         top: 20%;
         font-size: 125%;
+        cursor:pointer;
 
     }
 
@@ -454,6 +459,7 @@
         position: relative;
         top: 20%;
         font-size: 125%;
+        cursor:pointer;
     }
 
     #bottomleft-zoom-tile.bottomleft-zoom-style 
@@ -507,7 +513,7 @@
         position: relative;
         top: 20%;
         font-size: 125%;
-
+        cursor:pointer;
         
     }
 
@@ -519,6 +525,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
     }
 
     #bottomright-zoom-tile table {
@@ -528,6 +535,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: relative;
+        top: 5%;
 
     }
 

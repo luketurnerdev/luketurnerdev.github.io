@@ -5,8 +5,6 @@ function zoomTopLeft() {
     var element = document.getElementById("topleft-zoom-tile");
     element.classList.toggle("topleft-zoom-style");
 }
-   
-
   function zoomTopRight() {
     var element = document.getElementById("topright-zoom-tile");
     element.classList.toggle("topright-zoom-style");
