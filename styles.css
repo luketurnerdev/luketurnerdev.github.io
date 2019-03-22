@@ -162,7 +162,7 @@
 
     #topleft-zoom-tile ul{
         visibility: hidden;
-        padding-left: 15%;
+        padding-left: 5%;
     }
 
     #topleft-zoom-tile h1{
@@ -183,8 +183,14 @@
         font-size: 50px;
     }
 
+    #preamble{
+
+        height: 0;
+    }
+
     #topleft-zoom-tile h2 {
         visibility: hidden;
+        margin-bottom: 3vh;
     }
 
     #topleft-back-button{
@@ -242,7 +248,7 @@
     #topleft-zoom-tile.topleft-zoom-style li 
     {
         visibility: visible;
-        font-size:25px;
+        font-size:20px;
 
 
     }
