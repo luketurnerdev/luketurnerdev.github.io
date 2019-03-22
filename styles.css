@@ -346,6 +346,7 @@
         font-size: 160%;
         padding:10%;
     }
+    
     #topright-zoom-tile h1{
        
 
@@ -511,21 +512,40 @@
 
     #blog-1{
         visibility: hidden;
+        width: 20vw;
     }
 
     #blog-2{
         visibility: hidden;
+        width: 20vw;
     }
 
     #blog-3{
         visibility: hidden;
+        width: 20vw;
+    }
+
+    #blog-1 a {
+        display: inline-block;
+        /* position: relative;
+        left: 4vw; */
+
+    }
+
+    #blog-2 a {
+        display: inline-block;
+
+    }
+
+    #blog-3 a {
+        display: inline-block;
+
     }
 
     #blog-image-container {
         visibility: hidden;
         display:flex;
-        position: relative;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         top: 20%;
 
@@ -574,7 +594,8 @@
     #bottomleft-zoom-tile.bottomleft-zoom-style #bottomleft-back-button{
         visibility: visible;
         position: relative;
-        left: 85vw;
+        left: 73vw;
+
         cursor:pointer;
     }
 
