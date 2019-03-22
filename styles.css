@@ -290,7 +290,7 @@
         position: relative;
         justify-content: center;
         align-items: center;
-        top: 20%;
+        top: 14%;
 
     }
 
@@ -383,9 +383,7 @@
     #topright-zoom-tile p{
         visibility: hidden;
         font-family: 'Nanum Gothic', sans-serif;
-        font-size: 100%;
-        position: relative;
-        top: 2%;
+        font-size: 20px;
 
 
     }
@@ -486,11 +484,13 @@
         font-size: 125%;
         cursor:pointer;
         position:relative;
-        top: 5vh;
+        top: 20%;
     }
 
     #bottomleft-zoom-tile h2{
         visibility: hidden;
+        display: flex;
+        justify-content: center
     }
 
     #bottomleft-back-button {
@@ -603,7 +603,7 @@
     #bottomleft-zoom-tile.bottomleft-zoom-style #bottomleft-back-button{
         visibility: visible;
         position: relative;
-        left: 73vw;
+        left: 80%;
         cursor:pointer;
     }
 
