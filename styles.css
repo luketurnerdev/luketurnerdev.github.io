@@ -364,6 +364,14 @@
         font-size: 200%;
     }
 
+    #topright-back-button {
+
+        visibility: hidden;
+        height: 50px;
+        width: 50px;
+        cursor:pointer;
+    }
+
     #topright-zoom-tile p{
         visibility: hidden;
         font-family: 'Nanum Gothic', sans-serif;
@@ -412,6 +420,14 @@
 
         visibility: visible;
     }
+
+    #topright-zoom-tile.topright-zoom-style #topright-back-button
+    {
+        visibility: visible;
+        position: relative;
+        left: 90vw;
+        
+    } 
 
     /* Hide original h1 on zoom, show h2 instead */
     #topright-zoom-tile.topright-zoom-style h1
