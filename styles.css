@@ -157,6 +157,7 @@
          
     }
 
+
     #topleft-zoom-tile p{
         visibility: hidden;
         font-size: 10px;
@@ -173,6 +174,13 @@
         position: relative;
         top: 20%;
         font-size: 125%;
+    }
+
+    #topleft-zoom-tile h2{
+       
+
+        visibility: hidden;
+        font-size: 200%;
     }
 
     #topleft-zoom-tile.topleft-zoom-style 
@@ -197,18 +205,46 @@
         justify-content: center;
         position: relative;
         top: 2%;
-        font-size: 45px;
+        font-size: 50px;
+    }
+
+    #preamble{
+
+        position: relative;
+        top: 5%;
+    }
+
+    #skills {
+
+        position: relative;
+        top: 7%;
+    }
+
+    #work-history {
+
+        position: relative;
+        top: 7%;
+    }
+
+    #study-history {
+        position: relative;
+        top: 7%;
+    }
+
+    #topleft-zoom-tile.topleft-zoom-style h2
+    {
+        visibility: visible;
     }
     #topleft-zoom-tile.topleft-zoom-style p 
     {
         visibility: visible;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     #topleft-zoom-tile.topleft-zoom-style li 
     {
         visibility: visible;
-        font-size:30;
+        font-size:25px;
 
 
     }
@@ -216,9 +252,11 @@
     #topleft-zoom-tile.topleft-zoom-style ul 
     {
         visibility: visible;
-        font-size:30;
+        /* font-size:30; */
 
     }
+
+
 
 
     /* Top right */
@@ -258,6 +296,18 @@
         align-items: center;
     }
 
+    #project-1 img {
+
+        height: 40%;
+        width:40%;
+    }
+
+    #project-1 a{
+        font-size: 160%;
+        padding:10%;
+        margin-left: 9%;
+    }
+
     #project-2 {
         z-index: 99;
         height: 30%;
@@ -270,17 +320,27 @@
         align-items: center;
     }
 
+    #project-2 a{
+        font-size: 160%;
+        padding:10%;
+    }
+
 
     #project-3 {
         z-index: 99;
         height: 30%;
         width: 30%;
         position: relative;
+        top: 8px;
         font-size: 80%;
-
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #project-3 a{
+        font-size: 160%;
+        padding:10%;
     }
     #topright-zoom-tile h1{
        
@@ -292,10 +352,19 @@
 
     }
 
+    #topright-zoom-tile h2{
+       
+
+        visibility: hidden;
+        font-size: 200%;
+    }
+
     #topright-zoom-tile p{
         visibility: hidden;
         font-family: 'Nanum Gothic', sans-serif;
-        font-size: 60%;
+        font-size: 100%;
+        position: relative;
+        top: 2%;
 
 
     }
@@ -305,6 +374,10 @@
         font-family: 'Nanum Gothic', sans-serif;
         font-size: 60%;
     }
+
+    
+
+
 
     #topright-zoom-tile.topright-zoom-style 
     { 
@@ -335,12 +408,16 @@
         visibility: visible;
     }
 
+    /* Hide original h1 on zoom, show h2 instead */
     #topright-zoom-tile.topright-zoom-style h1
     { 
-        display: flex;
-        justify-content: center;
-        position: relative;
-        top: 2%;
+        visibility: hidden;
+        
+    }
+
+    #topright-zoom-tile.topright-zoom-style h2
+    { 
+        visibility: visible;
         
     }
 
@@ -430,7 +507,67 @@
         position: relative;
         top: 20%;
         font-size: 125%;
+
+        
     }
+
+    #bottomright-zoom-tile h2{
+       
+
+        visibility: hidden;
+        font-size: 200%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #bottomright-zoom-tile table {
+
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #bottomright-zoom-tile th, td {
+        border:1px solid black;
+    }
+
+    /* Social Media Links */
+
+    #social-media {
+        visibility: hidden;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 70px;
+        background-color: rgb(254, 255, 255);
+        position: relative;
+        top: 15vh;
+    }
+
+      }
+
+      #linkedin{
+        font-size: 5vw;
+      }
+
+      #twitter {
+        font-size: 5vw;
+
+      }
+
+      #instagram {
+        font-size: 5vw;
+      }
+
+      #github {
+        font-size: 5vw;
+
+      }
+
+      
 
     #bottomright-zoom-tile.bottomright-zoom-style 
     { 
@@ -459,22 +596,36 @@
     #bottomright-zoom-tile.bottomright-zoom-style h1
     {
 
-        display: flex;
-        justify-content: center;
-        position: relative;
-        top: 2%;
+        visibility: hidden;
     }
 
-    /* Hidden tiles containing information 
+    #bottomright-zoom-tile.bottomright-zoom-style h2
+    {
 
-    Only show these after zoom animation plays */
+       visibility: visible;
+    }
 
- 
+    #bottomright-zoom-tile.bottomright-zoom-style table
+    {
+
+       visibility: visible;
+    }
+
+    #bottomright-zoom-tile.bottomright-zoom-style div
+    {
+
+       visibility: visible;
+    }
+
+    
+
+    
 
 
-    /* // transform.scale
 
-    //transform duration */
+    
+
+  
 
 
 }
