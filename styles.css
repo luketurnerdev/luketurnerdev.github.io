@@ -518,6 +518,7 @@
     #blog-2{
         visibility: hidden;
         width: 20vw;
+       
     }
 
     #blog-3{
@@ -526,19 +527,20 @@
     }
 
     #blog-1 a {
-        display: inline-block;
-        /* position: relative;
-        left: 4vw; */
+        display: flex;
+        justify-content: center;
 
     }
 
     #blog-2 a {
-        display: inline-block;
+        display: flex;
+        justify-content: center;
 
     }
 
     #blog-3 a {
-        display: inline-block;
+        display: flex;
+        justify-content: center;
 
     }
 
