@@ -183,6 +183,21 @@
         font-size: 50px;
     }
 
+    #work-history {
+
+        display: none;
+    }
+
+    #study-history {
+
+        display: none;
+    }
+
+    #skills {
+
+        display: none;
+    }
+
     #preamble{
 
         height: 0;
@@ -757,15 +772,6 @@
     }
 
     
-
-    
-
-
-
-    
-
-  
-
 
 }
 @media screen and (min-width: 800px) 
