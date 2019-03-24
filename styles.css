@@ -86,10 +86,10 @@
 
     #puzzle-container 
     {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         justify-content: center;
-        position: relative;
+        position: relative; */
         /* top:35%; */
     }
         
