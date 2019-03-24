@@ -76,11 +76,8 @@
         background-color: #FFEED6
     }
 
-    #puzzle-wrapper{
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    #wrapper{
+        
     }
 
     #puzzle-container 
@@ -88,9 +85,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* top: 30vh; */
-        /* left: 0; */
         position: relative;
+        /* top:35%; */
     }
         
     #puzzle-top-row 
@@ -157,6 +153,7 @@
 
     #topleft-zoom-tile p{
         visibility: hidden;
+        /* display:none; */
         font-size: 8px;
     }
 
@@ -186,17 +183,17 @@
 
     #work-history {
 
-        display: none;
+        /* display: none; */
     }
 
     #study-history {
 
-        display: none;
+        /* display: none; */
     }
 
     #skills {
 
-        display: none;
+        /* display: none; */
     }
 
     #preamble{
