@@ -1,0 +1,55 @@
+$mobile-breakpoint: 768px;
+
+.container {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.heroImage {
+  width: 100vw;
+  height: 50vh;
+  display: block;
+  filter: brightness(50%);
+}
+
+.header {
+  font-size: 32px;
+  margin: 0;
+}
+
+.bodyText {
+  font-size: 22px;
+  padding: 5px;
+}
+
+.textContainer {
+  position: absolute;
+  color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .heroImage {
+    max-height: 250px;
+  }
+
+  .bodyText {
+    font-size: 12px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .header {
+    font-size: 24px;
+  }
+
+  .textContainer {
+    width: 100%;
+  }
+}
