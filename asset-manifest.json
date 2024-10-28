@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/neurogoblin.io/static/css/main.088c9113.css",
-    "main.js": "/neurogoblin.io/static/js/main.5cc646b8.js",
-    "static/js/453.0bed4bbe.chunk.js": "/neurogoblin.io/static/js/453.0bed4bbe.chunk.js",
-    "index.html": "/neurogoblin.io/index.html",
-    "main.088c9113.css.map": "/neurogoblin.io/static/css/main.088c9113.css.map",
-    "main.5cc646b8.js.map": "/neurogoblin.io/static/js/main.5cc646b8.js.map",
-    "453.0bed4bbe.chunk.js.map": "/neurogoblin.io/static/js/453.0bed4bbe.chunk.js.map"
+    "main.css": "/static/css/main.088c9113.css",
+    "main.js": "/static/js/main.06b518f7.js",
+    "static/js/453.0bed4bbe.chunk.js": "/static/js/453.0bed4bbe.chunk.js",
+    "index.html": "/index.html",
+    "main.088c9113.css.map": "/static/css/main.088c9113.css.map",
+    "main.06b518f7.js.map": "/static/js/main.06b518f7.js.map",
+    "453.0bed4bbe.chunk.js.map": "/static/js/453.0bed4bbe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.088c9113.css",
-    "static/js/main.5cc646b8.js"
+    "static/js/main.06b518f7.js"
   ]
 }
