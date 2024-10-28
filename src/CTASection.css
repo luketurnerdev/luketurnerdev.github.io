@@ -1,0 +1,40 @@
+.cta-section {
+    /* padding: 4em 1em; */
+    text-align: center;
+    background-color: #000;
+  }
+  
+  .cta-title {
+    font-size: 2em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5em;
+  }
+  
+  .cta-description {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 1.5em;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 1.5em;
+  }
+  
+  .cta-button {
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    color: #fff;
+    background-color: #8b13f49c;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  

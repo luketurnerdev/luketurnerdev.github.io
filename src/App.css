@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+  color: #fff;
+}
+
+body {
+  background-color: #000;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+#projects {
+  padding-top: 0;
+}
+
+#media {
+  padding-top: 0;
+}
+
+#contact {
+  padding-top: 0;
+}
+
+#about {
+  padding-top: 0;
+}
+
+
+
+
+.video-viewer {
+  position: relative;
+  top: 0px;
+}
+
+.viewer-container {
+  position: relative;
+  width: 80%;
+  height: 100vh; /* Adjust based on your desired height */
+  overflow: hidden;
+  margin: 0 auto;
+  /* margin-bottom: 0; */
+}
+
+.logo {
+  width: 300px;
+  margin-top: 15px;
+  /* height: 100px; */
+}
+
+.video-viewer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* border: 2px solid red; */
+  overflow: hidden; /* Ensures overflow is cropped */
+}
+
+.video-viewer video {
+  width: 100%; /* Adjust to zoom in and crop edges */
+  height: 100%; /* Adjust to zoom in and crop edges */
+  object-fit: cover; /* Ensures video fills the container without stretching */
+}
+
+
+.model-viewer {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Optional: Control layering with z-index */
+.model-viewer {
+  z-index: 2; /* Layer on top of the video */
+}
+
+.video-viewer {
+  z-index: 1;
+  opacity: 0.7; /* Optional: Adjust opacity for a blending effect */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,51 @@
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2em;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-text h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #fff;
+  }
+  
+  .about-text p {
+    font-size: 1.1em;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  .about-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Responsive layout for smaller screens */
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-image {
+      margin-top: 1.5em;
+    }
+  }
+  
