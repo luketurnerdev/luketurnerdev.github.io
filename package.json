@@ -1,6 +1,6 @@
 {
   
-    "homepage": "neurogoblin.io",
+    "homepage": "https://neurogoblin.io",
     "devDependencies": {
       "gh-pages": "^6.2.0"
     },
