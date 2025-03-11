@@ -47,16 +47,16 @@ const exampleProjects = {
     },
   ],
   personal: [
-    // { 
-    //   id: 5, 
-    //   title: "Virtual Live Audio Engineer", 
-    //   date: "2023-Present",
-    //   description: "Virtual Live Audio Engineer (VLAE) is a VR application designed to teach users live audio skills in an immersive and engaging environment. </br> </br> It is currently being developed as part of a research project at UTS on optimal learning paradigms in VR.",
-    //   image: `${process.env.PUBLIC_URL}/img/vlae.png`, 
-    //   link: "https://www.youtube.com/watch?v=Pw_asgMJn4Q",  
-    //   video: null, 
-    //   linkName: "Video Demo" 
-    // },
+    { 
+      id: 5, 
+      title: "Virtual Live Audio Engineer", 
+      date: "2023-Present",
+      description: "Virtual Live Audio Engineer (VLAE) is a VR application designed to teach users live audio skills in an immersive and engaging environment. </br> </br> It is currently being developed as part of a research project at UTS on optimal learning paradigms in VR.",
+      image: `${process.env.PUBLIC_URL}/img/newui.png`, 
+      link: "https://www.youtube.com/watch?v=_sLEIi5ofsg",  
+      video: null, 
+      linkName: "Video Demo" 
+    },
     { 
       id: 6, 
       title: "Orb Pondering XR", 
