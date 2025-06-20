@@ -18,7 +18,7 @@ function App() {
 
       <header className="app-header">
         {/* <h1>Neurogoblin Studios</h1> */}
-        <img className="logo" src={`${process.env.PUBLIC_URL}/img/goblogo1.png`} alt="Logo" />
+        <img className="logo" src={`${process.env.PUBLIC_URL}/img/LTLogo.png`} alt="Logo" />
       </header>
 
       <div className="viewer-container" id="home">

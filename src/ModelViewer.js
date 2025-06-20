@@ -65,7 +65,7 @@ function BackgroundVideo() {
 
 function Model() {
   const fbx = useFBX(`${process.env.PUBLIC_URL}/fbx/neuro-anim.fbx`); // Updated path for GitHub Pages
-  const texture = new THREE.TextureLoader().load(`${process.env.PUBLIC_URL}/fbx/neuro-albedo.png`); // Updated path for GitHub Pages
+  const texture = new THREE.TextureLoader().load(`${process.env.PUBLIC_URL}/fbx/texture_0.png`); // Updated path for GitHub Pages
   const mixer = useRef(); // Reference for AnimationMixer
 
   useEffect(() => {
