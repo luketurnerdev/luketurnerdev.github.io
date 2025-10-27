@@ -63,10 +63,22 @@
   }
   
   .project-image {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    height: 50%;
     border-radius: 8px;
     margin-bottom: 1em;
+  }
+
+  .imageBox {
+    /* border: 2px solid red; */
+    position: relative;
+  }
+
+  .unity {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
   }
   
   .project-title {

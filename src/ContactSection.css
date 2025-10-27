@@ -8,13 +8,12 @@
   .section-title {
     font-size: 2em;
     font-weight: 600;
-    color: #fff;
     margin-bottom: 0.5em;
   }
   
   .contact-description {
     font-size: 1em;
-    color: #666;
+    color: #f3aebb;
     margin-bottom: 1.5em;
   }
   
@@ -25,11 +24,11 @@
   }
   
   .contact-icon {
-    color: #007bff;
+    color: #f3aebb;
     transition: color 0.3s ease;
   }
   
   .contact-icon:hover {
-    color: #0056b3;
+    color: #f3aebb;
   }
   

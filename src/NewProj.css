@@ -1,0 +1,117 @@
+.projects-section {
+  background-color: #0b0b0b;
+  padding: 4rem 5rem;
+  color: #f3aebb;
+  font-family: "Poppins", sans-serif;
+}
+
+.projects-section h2 {
+  color: #8de3df;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* --- Grid Layout --- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Card --- */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(243, 174, 187, 0.2);
+}
+
+/* --- Video Section --- */
+.project-img {
+  position: relative;
+  overflow: hidden;
+  height: 280px; /* Increased height for a more cinematic look */
+}
+
+.project-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none; /* Prevent clicks or controls */
+}
+
+/* --- Overlay --- */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.4rem 1rem;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.overlay-text {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 500;
+}
+
+/* --- Info Section --- */
+.project-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-info h3 {
+  color: #f3aebb;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.project-info .role {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin: 0.2rem 0 1rem;
+}
+
+.project-info .desc {
+  color: #f0dede;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* --- Responsive fine-tuning --- */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 2rem;
+  }
+
+  .project-info h3 {
+    font-size: 1rem;
+  }
+
+  .project-info .desc {
+    font-size: 0.9rem;
+  }
+}
