@@ -8,18 +8,40 @@ import EscapeVelocity from './EscapeVelocity';
 import NewHeader from './NewHeader';
 import NewProj from './NewProj';
 import PageWrapper from './PageWrapper';
+import { useEffect, useRef } from "react";
 
 function AnimatedRoutes() {
   const location = useLocation();
+  const firstLoad = useRef(true);
+
+  useEffect(() => {
+    // mark that we’ve animated once already
+    if (firstLoad.current) firstLoad.current = false;
+  }, [location.pathname]);
 
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        {/* Home slides in from RIGHT */}
-        <Route path="/" element={<PageWrapper direction="right"><MainPage /></PageWrapper>} />
-        {/* Projects slide in from LEFT */}
-        <Route path="/meditation" element={<PageWrapper direction="left"><MeditationPage /></PageWrapper>} />
-        <Route path="/escapevelocity" element={<PageWrapper direction="left"><EscapeVelocity /></PageWrapper>} />
+        {/* ✅ Only skip animation on first load */}
+        <Route
+          path="/"
+          element={
+            <PageWrapper
+              direction="right"
+              skip={firstLoad.current && location.pathname === "/"}
+            >
+              <MainPage />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/meditation"
+          element={<PageWrapper direction="left"><MeditationPage /></PageWrapper>}
+        />
+        <Route
+          path="/escapevelocity"
+          element={<PageWrapper direction="left"><EscapeVelocity /></PageWrapper>}
+        />
       </Routes>
     </AnimatePresence>
   );
@@ -58,8 +80,7 @@ function Intro() {
 export default function App() {
   return (
     <Router>
-      {/* ✅ Header stays sticky and unaffected */}
-      <NewHeader />
+      <NewHeader /> {/* ✅ Sticky header */}
       <AnimatedRoutes />
     </Router>
   );

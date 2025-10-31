@@ -1,8 +1,11 @@
 .projects-section {
-  background-color: #0b0b0b;
+  background-color: 0;
   padding: 4rem 5rem;
   color: #f3aebb;
   font-family: "Poppins", sans-serif;
+  /* width: 50vw; */
+  max-width: 75vw;
+  margin: 0 auto;
 }
 
 .projects-section h2 {
@@ -16,6 +19,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  /* max-width: 75vw;
+  margin: 0 auto; */
 }
 
 @media (max-width: 768px) {
