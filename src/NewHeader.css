@@ -63,6 +63,14 @@ body {
   transition: background 0.2s;
 }
 
+header, .header-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0e0e0e; /* or match your background */
+}
+
+
 .resume-btn:hover {
   background: #f3aebb;
   color: #0b0b0b;

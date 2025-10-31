@@ -1,0 +1,85 @@
+.project-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #f2f2f2;
+  background-color: #0e0e0e;
+  font-family: 'Inter', sans-serif;
+}
+
+.project-header {
+  margin-bottom: 1.5rem;
+}
+
+.go-back {
+  color: #f08080;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+  color: #a8f1f1;
+}
+
+.project-role {
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.project-video-wrapper {
+  margin: 2rem 0;
+}
+
+.project-video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #111;
+}
+
+.project-info-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-about,
+.project-info {
+  flex: 1;
+  background-color: #181818;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.project-about h2,
+.project-info h2 {
+  color: #ffb6c1;
+  margin-bottom: 1rem;
+}
+
+.project-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-info li {
+  margin-bottom: 0.5rem;
+}
+
+.project-content section {
+  margin-bottom: 2.5rem;
+}
+
+.project-content h2 {
+  color: #ffb6c1;
+  margin-bottom: 0.5rem;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 1rem;
+}

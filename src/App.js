@@ -1,71 +1,36 @@
-// src/App.js
-import React from 'react';
 import './App.css';
-import ModelViewer from './ModelViewer';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ProjectSection from './ProjectSection';
-import {ContactSection, Links} from './ContactSection';
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { ContactSection } from './ContactSection';
 import MediaSection from './MediaSection';
-import HamburgerMenu from './HamburgerMenu';
-import CTASection from './CTASection';
-import AboutSection from './AboutSection';
-import AutoPlayVideo from './AutoPlayVideo';
-import MeditationPage from './MeditationPage';
+import { AnimatePresence } from "framer-motion";
+import MeditationPage from './projectPages/MeditationPage';
 import EscapeVelocity from './EscapeVelocity';
 import NewHeader from './NewHeader';
 import NewProj from './NewProj';
+import PageWrapper from './PageWrapper';
 
-function App() {
+function AnimatedRoutes() {
+  const location = useLocation();
+
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/meditation" element={<MeditationPage />} />
-        <Route path="/escapevelocity" element={<EscapeVelocity />} />
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<PageWrapper direction="right"><MainPage /></PageWrapper>} />
+        <Route path="/meditation" element={<PageWrapper direction="left"><MeditationPage /></PageWrapper>} />
+        <Route path="/escapevelocity" element={<PageWrapper direction="left"><EscapeVelocity /></PageWrapper>} />
       </Routes>
-    </Router>
+    </AnimatePresence>
   );
 }
 
-
 function MainPage() {
   return (
-    <div className="App">
-      {/* Add the HamburgerMenu at the top for easy navigatio */}
-      {/* <HamburgerMenu /> */}
-
-      {/* <header className="app-header">
-        <img className="logo" src={`${process.env.PUBLIC_URL}/img/LTLogo.png`} alt="Logo" />
-      </header> */}
-
-       {/* <div id="contact"> */}
-        {/* <Links /> */}
-      {/* </div> */}
-
-      {/* <div className="viewer-container" id="home">
-        <div className="model-viewer">
-          <ModelViewer />
-        </div>
-        <div className="video-viewer">
-          <AutoPlayVideo />
-        </div>
-      </div> */}
-
-      <NewHeader />
-
-      {/* <div id="about">
-        <AboutSection />
-      </div>
-      <CTASection /> */}
-
-      {/* <div id="projects"> */}
-        <NewProj />
-      {/* </div> */}
-
+    <div>
+      <Intro />
+      <NewProj />
       <div id="media">
         <MediaSection />
       </div>
-
       <div id="contact">
         <ContactSection />
       </div>
@@ -73,4 +38,22 @@ function MainPage() {
   );
 }
 
-export default App;
+function Intro() {
+  return (<div className="intro-section">
+        <img src={`${process.env.PUBLIC_URL}/img/me.jpg`} alt="Profile" className="profile-img" />
+        <p className="intro-text">
+Howdy! I’m Luke, an experienced creative technologist and software developer who loves to build immersive and interactive experiences that blend art and technology.
+I design expressive systems that connect people with digital worlds, supported by clean, efficient code that brings stories to life.
+Unity is my primary tool, though my roots in web development keep me curious and adaptable across new technologies. 
+      </p>
+      </div>)
+}
+
+export default function App() {
+  return (
+    <Router>
+      <NewHeader />
+      <AnimatedRoutes />
+    </Router>
+  );
+}

@@ -1,5 +1,3 @@
-// src/ProjectSection.js
-import React from 'react';
 import './ProjectSection.css';
 
 const exampleProjects = {

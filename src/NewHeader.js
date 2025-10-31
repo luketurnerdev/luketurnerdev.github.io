@@ -26,14 +26,14 @@ export default function NewHeader() {
         </div>
       </header>
 
-      <div className="intro-section">
+      {/* <div className="intro-section">
         <img src={`${process.env.PUBLIC_URL}/img/me.jpg`} alt="Profile" className="profile-img" />
         <p className="intro-text">
 Howdy! I’m Luke, an experienced creative technologist and software developer who loves to build immersive and interactive experiences that blend art and technology.
 I design expressive systems that connect people with digital worlds, supported by clean, efficient code that brings stories to life.
 Unity is my primary tool, though my roots in web development keep me curious and adaptable across new technologies. 
       </p>
-      </div>
+      </div> */}
     </div>
   );
 }

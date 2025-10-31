@@ -1,0 +1,27 @@
+
+.meditation-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #0f0f0f; /* Dark background for contrast */
+  min-height: 100vh;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.meditation-page h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.meditation-page iframe {
+  border: none;
+  max-width: 100%;
+  width: 960px;
+  height: 600px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}

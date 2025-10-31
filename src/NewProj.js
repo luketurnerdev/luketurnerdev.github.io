@@ -45,7 +45,7 @@ const projects = [
     link: "/ucat",
   },
   {
-    title: "Sound Storm",
+    title: "Sound Storm (2022)",
     role: "Unity Developer (iOS)",
     description: "Sound Storm is an iOS application developed in Unity that helps children suffering from Spatial Processing Disorder through a series of interactive games.",
     video: `${process.env.PUBLIC_URL}/mp4/sound.mp4`,
@@ -55,14 +55,24 @@ const projects = [
     link: "/sound",
   },
   {
-    title: "Space Breathwork",
+    title: "Space Breathwork (2025)",
     role: "Unity Developer (WebGL)",
     description: "Space Breathwork is a breathwork application built in Unity to help people engage in various breathwork practices in a relaxing 3D space environment.",
     video: `${process.env.PUBLIC_URL}/mp4/space.mp4`,
     duration: "2 Weeks",
     team: "1",
     engine: "Unity",
-    link: "/space",
+    link: "/meditation",
+  },
+  {
+    title: "Tech Gym (2018)",
+    role: "Unity Developer (UR3 Robot Integration)",
+    description: "Tech Gym was a startup at UTS which aimed to help stroke patients in their upper limb recovery through an interactive Unity application linked to a UR3 robotics system.",
+    video: `${process.env.PUBLIC_URL}/mp4/techGym.mp4`,
+    duration: "6 Months",
+    team: "3",
+    engine: "Unity",
+    link: "/techGym",
   },
   {
     title: "Orb Pondering XR (Upcoming)",
@@ -74,6 +84,7 @@ const projects = [
     engine: "Unity",
     link: "/orb",
   },
+  
 ];
 
 export default function NewProj() {
