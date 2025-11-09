@@ -10,6 +10,8 @@ export default function ProjectLayout({
   engine, 
   about, 
   videoSrc, 
+  playLink,
+  playText,
   children 
 }) {
   return (
@@ -31,11 +33,23 @@ export default function ProjectLayout({
         />
       </div>
 
+      {playLink && <section className="cta-section">
+        <a
+          href={playLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="play-now-button"
+        >
+          {playText}
+        </a>
+      </section> }
+
+
       <div className="project-info-section">
-        <div className="project-about">
+        {/* <div className="project-about">
           <h2>About</h2>
           <p>{about}</p>
-        </div>
+        </div> */}
         <div className="project-info">
           <h2>Project Info</h2>
           <ul>

@@ -17,6 +17,36 @@
   font-weight: 500;
 }
 
+.play-now-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.9rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 8px 20px rgba(0, 242, 254, 0.3);
+  animation: floaty 3s ease-in-out infinite;
+}
+
+.play-now-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 242, 254, 0.5);
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.cta-section {
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+
 .project-title {
   font-size: 2.5rem;
   margin-top: 0.5rem;
@@ -83,3 +113,85 @@
   border-radius: 10px;
   margin-top: 1rem;
 }
+
+.gallery-section {
+  text-align: center;
+  margin: 3rem 0;
+  position: relative;
+}
+
+.carousel {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 800px;
+}
+
+.carousel-image {
+  width: 100%;
+  border-radius: 1rem;
+  transition: opacity 0.5s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.6);
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.2em 0.5em;
+  transition: background 0.2s;
+}
+
+.carousel-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-btn.left {
+  left: -2rem;
+}
+
+.carousel-btn.right {
+  right: -2rem;
+}
+
+.carousel-dots {
+  margin-top: 1rem;
+}
+
+
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dot.active {
+  background: #00f2fe;
+}
+

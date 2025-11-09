@@ -4,11 +4,13 @@ import { ContactSection } from './ContactSection';
 import MediaSection from './MediaSection';
 import { AnimatePresence } from "framer-motion";
 import MeditationPage from './projectPages/MeditationPage';
+import MeditationApp from './apps/MeditationApp';
 import EscapeVelocity from './EscapeVelocity';
 import NewHeader from './NewHeader';
 import NewProj from './NewProj';
 import PageWrapper from './PageWrapper';
 import { useEffect, useRef } from "react";
+import RSIPage from './projectPages/RSIPage';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -37,6 +39,14 @@ function AnimatedRoutes() {
         <Route
           path="/meditation"
           element={<PageWrapper direction="left"><MeditationPage /></PageWrapper>}
+        />
+        <Route
+          path="/rsi"
+          element={<PageWrapper direction="left"><RSIPage /></PageWrapper>}
+        />
+        <Route
+          path="/space-breathwork"
+          element={<MeditationApp />}
         />
         <Route
           path="/escapevelocity"
@@ -68,10 +78,8 @@ function Intro() {
       />
       <p className="intro-text">
         Howdy! I’m Luke, an experienced creative technologist and software developer who loves
-        to build immersive and interactive experiences that blend art and technology. I design
-        expressive systems that connect people with digital worlds, supported by clean, efficient
-        code that brings stories to life. Unity is my primary tool, though my roots in web
-        development keep me curious and adaptable across new technologies.
+        to build immersive and interactive experiences that blend art and technology. My experience spans across VR, Ed-tech, Med-tech and Tech-art / installation work. Unity (C#) is my primary tool, but
+        I genuinely love learning new technologies and paradigms as a means to express creative storytelling.
       </p>
     </div>
   );

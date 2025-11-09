@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import ProjectLayout from "../ProjectLayout";
 import "../ProjectPage.css";
 
-export default function MeditationPage() {
+export default function RSIPage() {
   // Add your images here
   const galleryImages = [
-    `${process.env.PUBLIC_URL}/img/space/1.png`,
-    `${process.env.PUBLIC_URL}/img/space/2.png`,
-    `${process.env.PUBLIC_URL}/img/space/3.png`,
-    `${process.env.PUBLIC_URL}/img/space/4.png`,
+      `${process.env.PUBLIC_URL}/img/rsi/3.png`,
+    `${process.env.PUBLIC_URL}/img/rsi/1.png`,
+    `${process.env.PUBLIC_URL}/img/rsi/2.jpg`,
+    `${process.env.PUBLIC_URL}/img/rsi/4.png`,
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,33 +25,27 @@ export default function MeditationPage() {
 
   return (
     <ProjectLayout
-      title="Space Breathwork Application"
-      role="Unity Developer (C#)"
-      team="1"
-      duration="2 Weeks"
-      engine="Unity (C#)"
-      about="Space Breathwork is a breathwork application built in Unity to help people engage in various breathwork practices in a relaxing 3D space environment."
-      videoSrc={`${process.env.PUBLIC_URL}/mp4/space.mp4`}
-      playLink={`${process.env.PUBLIC_URL}/space-breathwork}`}
-      playText={"🚀 Play Now"}
+      title="Road Smart Interactive (2025)"
+      role="Unity Developer (C#) - VR / iOS"
+      team="2"
+      duration="6 Months"
+      engine="Unity (C#), XCode, Testflight"
+      about="Road Smart Interactive "
+      videoSrc={`${process.env.PUBLIC_URL}/mp4/RSIVR1.mp4`}
+      playLink={"https://www.roadsafetyeducation.vic.gov.au/educational-resources/programs/roadsmart-interactive"}
+      playText="Road Smart Interactive Victoria Page"
     >
       <section>
-        <h2>Introduction</h2>
+        <h2>About</h2>
         <p>
-          Space Breathwork is a simple Unity app built for the web that provides
-          users a relaxing way to engage in breathwork practices. The user can
-          choose whether to have a calming or energetic effect, and they can
-          change the timing of their inhales and exhales.
+          Road Smart Interactive is an installation designed for high school students in Victoria and Western Australia. It is comprised of a 30-iPad networked experience and 2 VR experiences, with the aim of educating students about road safety in an immersive and engaging manner.
         </p>
       </section>
 
       <section>
-        <h2>What I Learned</h2>
+        <h2>Skills Learned</h2>
         <p>
-          This app helped me learn how to manipulate shaders, as the breathing
-          orb changes in response to your inhales and exhales. I also learned
-          about procedural generation of the asteroids in the background of the
-          scene.
+          This application taught me a lot about the logistics of networking such a large amount of iPads, debugging iOS apps at scale, and the challenges of physically installing an iPad experience.
         </p>
       </section>
 
@@ -83,7 +77,7 @@ export default function MeditationPage() {
         ) : (
           <img
             src={galleryImages[0]}
-            alt="Meditation Scene"
+            alt="Road Smart Interactive"
             className="project-image"
           />
         )}
